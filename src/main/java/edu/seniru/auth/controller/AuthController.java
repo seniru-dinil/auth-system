@@ -1,16 +1,26 @@
 package edu.seniru.auth.controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import edu.seniru.auth.dto.RegisterRequest;
+import edu.seniru.auth.entity.UserEntity;
+import edu.seniru.auth.service.UserRegistrationService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/auth")
+@RequiredArgsConstructor
 public class AuthController {
 
+    private final UserRegistrationService userRegistrationService;
     @GetMapping
     public String hello(){
         return "hello user";
+    }
+
+
+    @PostMapping("/register")
+    public UserEntity saveUser(@RequestBody RegisterRequest request){
+        return userRegistrationService.createUser(request);
     }
 }
