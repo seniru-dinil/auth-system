@@ -13,6 +13,7 @@ target/
 *.ipr
 
 logs
+logs/application.log
 
 ### Eclipse ###
 .apt_generated
@@ -40,4 +41,4 @@ build/
 .DS_Store
 
 
-application.log
+

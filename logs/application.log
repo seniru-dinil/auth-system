@@ -820,8 +820,11 @@ This generated password is for development use only. Your security configuration
 2025-03-30 01:54:07 [http-nio-8080-exec-1] INFO  e.s.a.c.RequestResponseLoggingFilter - Request Headers: content-type=application/json, user-agent=PostmanRuntime/7.43.3, accept=*/*, postman-token=fe56ebb6-34fe-4153-98a1-4ad7572ec649, host=localhost:8080, accept-encoding=gzip, deflate, br, connection=keep-alive, content-length=122
 2025-03-30 01:54:07 [http-nio-8080-exec-1] INFO  e.s.a.c.RequestResponseLoggingFilter - Response Body: {"id":1,"email":"senirudinil927@gmail.com","password":"$2a$10$JzQPFoCFynt./b50lv/tbOnhvSxLOXom50mXFoIRvU0qHIOhAy7JK","firstName":"seniru","lastName":"dinil","created":"2025-03-29T20:24:07.712+00:00","updated":"2025-03-29T20:24:07.712+00:00","failedAttempt":null,"status":"ACTIVE","resetToken":null,"lastLogin":null,"userRoleEntities":[{"id":1,"name":"ROLE_USER"},{"id":2,"name":"ROLE_ADMIN"}],"enabled":true,"credentialsNonExpired":true,"accountNonExpired":true,"username":"senirudinil927@gmail.com","accountNonLocked":true,"authorities":[{"authority":"ROLE_USER"},{"authority":"ROLE_ADMIN"}]}
 2025-03-30 01:54:07 [http-nio-8080-exec-1] TRACE o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match request to [Is Secure]
+<<<<<<< HEAD
 2025-03-30 02:07:30 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2025-03-30 02:07:30 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
 2025-03-30 02:07:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-30 02:07:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-03-30 02:07:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+=======
+>>>>>>> 5600a0291b14326bcc71886fb8ec6e9a3ea7a01d
