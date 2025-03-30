@@ -7,6 +7,7 @@ import edu.seniru.auth.entity.UserRoleEntity;
 import edu.seniru.auth.repository.UserEntityRepository;
 import edu.seniru.auth.repository.UserRoleEntityRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,8 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class UserRegistrationServiceImpl {
 
-    private final List<String> list=List.of("senirudinil927@gmail.com","sandaligunarathne@gmail.com","samankumara@gmail.com");
+    @Value("${application.support.admin.list}")
+    private List<String> list;
     private final PasswordEncoder passwordEncoder;
     private final UserEntityRepository userEntityRepository;
     private final UserRoleEntityRepository roleEntityRepository;
