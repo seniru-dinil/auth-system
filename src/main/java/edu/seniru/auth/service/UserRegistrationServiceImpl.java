@@ -28,7 +28,6 @@ public class UserRegistrationServiceImpl {
         if (byEmail.isPresent()) {
             return null;
         }
-
         return userEntityRepository.save(UserEntity.builder()
                 .email(request.getEmail())
                 .firstName(request.getFirstName())
