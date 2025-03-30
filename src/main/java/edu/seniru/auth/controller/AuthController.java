@@ -3,7 +3,7 @@ package edu.seniru.auth.controller;
 
 import edu.seniru.auth.dto.RegisterRequest;
 import edu.seniru.auth.entity.UserEntity;
-import edu.seniru.auth.service.UserRegistrationService;
+import edu.seniru.auth.service.UserRegistrationServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final UserRegistrationService userRegistrationService;
+    private final UserRegistrationServiceImpl userRegistrationService;
     @GetMapping
     public String hello(){
         return "hello user";
